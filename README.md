@@ -1,11 +1,23 @@
-# ITI-Examination-System-DB
-This is our implementation for a project simulating the Information Technology Institute (ITI) Examination System Database using (Microsoft sql server).
-The project consists of different entities
-(exam, instructor creating the exam, student, course, branch, intake, track, question pool ….etc) that we tried to map with the most effective way to serve our goal.
-<ul>
-  <li>The institution has many branches each has one or more managers and a number of intakes over the year each has some tracks taught in it.</li>
-  <li>Our main focus in this project was how the instructor creates an exam for his courses whether by providing the system by the number of questions/grades he want for the exam to have then the system choose that number of questions(MCQ, T/F and text) specific to his course randomly from a question pool that contains all courses’ questions, or he can specify/add manually what questions should the exam have from the pool.</li>
-  <li>Then we focused on how the student can insert his answers of that specific exam. And finally on how the student answer for that exam is graded and finding whether he passed the test or not.</li>
-  <li>Training manager also can administrate the branch he manage, its trackes and intakes by different capabilities.</li>
-</ul>
-We used many sql server objects that helped us through our implementation such as : procedures, views, triggers, indexes. (We made as many validations as we could for every user input for each procedure we created). We also applied the concept of file groups to our database, we also created a full back to our database objects and data that happens twice a day and we created 4 accounts with different levels of accessibility and permissions on our database objects to add more security to our database.
+
+## ITI Examination System Database
+Welcome to the ITI Examination System Database repository! This project aims to simulate the Information Technology Institute (ITI) Examination System using Microsoft SQL Server. It includes various entities such as exams, instructors, students, courses, branches, intakes, tracks, and question pools, all designed to effectively serve the institution's needs.
+
+Features
+Branch Management: The institution operates multiple branches, each overseen by one or more managers. Each branch conducts multiple intakes throughout the year, offering various tracks.
+
+Exam Creation: Instructors can create exams for their courses, either by specifying the number of questions and grades or manually selecting questions from the question pool. The system ensures randomness and relevancy of questions.
+
+Student Participation: Students can submit their answers for specific exams. The system grades the answers and determines whether the student has passed the test.
+
+Training Manager Administration: Training managers have administrative capabilities over the branches they manage, including the management of tracks and intakes with different permissions.
+
+## SQL Server Objects Used
+Stored Procedures: Implement business logic and data manipulation operations.
+Views: Present data in a readable format and facilitate data retrieval.
+Triggers: Automatically execute actions in response to database events, ensuring data integrity.
+Indexes: Optimize query performance by speeding up data retrieval operations.
+Security Measures
+Access Control: Four user accounts with different levels of accessibility and permissions are created to enhance database security.
+Data Validation: Extensive validation is implemented for user inputs in each procedure to ensure data integrity and prevent unauthorized access or manipulation.
+Backup Strategy: Full backups of database objects and data occur twice daily to prevent data loss.
+File Groups: Organize database files into logical groups for improved manageability and performance
